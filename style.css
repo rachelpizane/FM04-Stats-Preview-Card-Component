@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid grey; */
+}
+
+body {
+    
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: hsl(233, 47%, 7%);
+    color: #fff;
+}
+
+.card {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75vw;
+    border-radius: .5rem;
+    overflow: hidden;
+    background-color: #1b1938;
+}
+
+.card-text {
+    padding: 4.5rem;
+    display: grid;
+    align-content: space-between;
+    font-size: 0.85rem;
+}
+
+.text-text h1 {
+    font-size: 2rem;
+    letter-spacing: 0.063rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.text-text h1 span {
+    color: #aa5cdb;
+}
+
+.text-text p {
+    margin-top: 1.5rem;
+    line-height: 1.75;
+}
+
+.text-topics{
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    text-transform: uppercase;
+
+}
+
+p:not(.text-topics li p:first-child){
+    color: hsla(0, 0%, 100%, 0.589);
+}
+
+.text-topics li p:first-child{
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffffdc
+}
+
+.card-img {
+    max-width: 100%;
+    display: block;
+}
+
+picture{
+    position: relative;
+}
+
+picture::after {
+    content:"";
+    display: block;
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height:100%;
+    background: #4b057798;
+}
+
+.attribution {
+    text-align: center;
+    padding: 1rem 1.5rem 0;
+}
+
+.attribution a {
+    color: inherit;
+}
+
+@media screen and (max-width: 480px){
+    body {
+        gap: 1.5em;
+        padding: 1.5rem;
+    }
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "card-img"
+        "card-text";
+    } 
+
+    .card-text {
+        grid-area:card-text;
+        padding: 2.5rem;
+        text-align: center;
+    }
+
+    .text-topics {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .card-img {
+        grid-area:card-img;
+    }
+}
