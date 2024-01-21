@@ -9,7 +9,8 @@ This is a solution to the [Stats Preview Card Component challenge on Frontend Me
 
 ### Screenshot
 
-![Stats Preview Card Component](images/Stats-Preview-Card-Component.png)
+![Stats Preview Card Component Desktop](images/Stats-Preview-Card-Component.png)
+![Stats Preview Card Component Mobile](images/Stats-Preview-Card-Component-mobile.jpg)
 
 
 ### Links
