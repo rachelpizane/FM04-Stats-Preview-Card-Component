@@ -123,8 +123,12 @@ picture::after {
 
     .card-text {
         padding: 4rem;
-        gap: 5rem;
+        gap: 2rem;
         box-sizing: border-box;
+    }
+    
+    .text-text p{
+        font-size: .85rem;;
     }
 
     .text-topics{
